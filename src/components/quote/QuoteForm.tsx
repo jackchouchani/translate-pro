@@ -2,9 +2,20 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Send } from 'lucide-react';
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  sourceLanguage: string;
+  targetLanguage: string;
+  details: string;
+}
+
+type FormInputElement = HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+
 export const QuoteForm = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
@@ -13,35 +24,70 @@ export const QuoteForm = () => {
     details: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      sourceLanguage: '',
-      targetLanguage: '',
-      details: '',
-    });
-  };
-
   const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<FormInputElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
+    setFormData((prev: FormData) => ({
       ...prev,
       [name]: value,
     }));
   };
 
+  const encode = (data: Record<string, any>) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "quote",
+          ...formData
+        })
+      });
+
+      if (response.ok) {
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          sourceLanguage: '',
+          targetLanguage: '',
+          details: '',
+        });
+        alert(t('quote.form.successMessage'));
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert(t('quote.form.errorMessage'));
+    }
+  };
+
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
+    <form 
+      name="quote"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+      className="bg-white p-6 rounded-lg shadow-md"
+    >
+      <input type="hidden" name="form-name" value="quote" />
+      <div className="hidden">
+        <label>
+          Don't fill this out if you're human: <input name="bot-field" />
+        </label>
+      </div>
+
       <div className="flex items-center space-x-2 mb-6">
         <Send className="h-6 w-6 text-blue-600" />
         <h2 className="text-2xl font-semibold">{t('quote.form.title')}</h2>
@@ -103,7 +149,7 @@ export const QuoteForm = () => {
             >
               <option value="">{t('quote.form.selectLanguage')}</option>
               <option value="en">English</option>
-              <option value="es">Turksih</option>
+              <option value="tr">Turkish</option>
               <option value="fr">French</option>
             </select>
           </div>
@@ -121,7 +167,7 @@ export const QuoteForm = () => {
             >
               <option value="">{t('quote.form.selectLanguage')}</option>
               <option value="en">English</option>
-              <option value="es">Turksih</option>
+              <option value="tr">Turkish</option>
               <option value="fr">French</option>
             </select>
           </div>
