@@ -329,4 +329,51 @@ export const fr = {
       submit: 'Demander un Devis',
     },
   },
+  portfolio: {
+    categories: {
+      all: 'Tous les Projets',
+      legal: 'Juridique',
+      medical: 'Médical',
+      technical: 'Technique',
+      business: 'Affaires'
+    },
+    clients: {
+      law_firm: 'Cabinet d\'Avocats International',
+      health_org: 'Organisation Mondiale de la Santé',
+      engineering_corp: 'Solutions d\'Ingénierie Corp',
+      multinational_corp: 'Corporation Multinationale'
+    },
+    items: {
+      legal1: {
+        title: 'Traduction de Contrats Internationaux',
+        description: 'Traduction complète de la documentation de fusion d\'entreprises pour une société multinationale, incluant les accords juridiques et les documents de conformité réglementaire.'
+      },
+      medical1: {
+        title: 'Articles de Recherche Médicale',
+        description: 'Traduction de documentation d\'essais cliniques et d\'articles de recherche pour une société pharmaceutique leader, garantissant une terminologie médicale précise.'
+      },
+      technical1: {
+        title: 'Documentation Technique',
+        description: 'Traduction de manuels techniques et de spécifications pour équipements industriels, incluant les protocoles de sécurité et les guides de maintenance.'
+      },
+      business1: {
+        title: 'Communications d\'Entreprise',
+        description: 'Traduction de rapports annuels, présentations d\'entreprise et communications internes pour un projet d\'expansion commerciale mondiale.'
+      }
+    }
+  },
+  testimonials: {
+    title: 'Ce que Disent Nos Clients',
+    subtitle: 'Écoutez les organisations qui font confiance à nos services de traduction',
+    roles: {
+      legal_director: 'Directeur Juridique',
+      medical_officer: 'Directeur Médical',
+      tech_manager: 'Responsable de la Documentation Technique'
+    },
+    content: {
+      sarah: 'TranslatePro a joué un rôle essentiel dans la gestion de notre documentation juridique internationale. Leur attention aux détails et leur expertise juridique sont remarquables. Nous travaillons avec eux depuis plus de 5 ans et leur service a toujours été excellent.',
+      michael: 'Les traductions médicales fournies sont systématiquement précises et fiables. Ils comprennent la nature critique de la documentation médicale. Leur équipe de traducteurs médicaux nous a aidés à garantir une parfaite exactitude dans toute notre documentation d\'essais cliniques.',
+      emma: 'Leur équipe de traduction technique possède des connaissances exceptionnelles. Ils nous ont aidés à diffuser notre documentation sur les marchés mondiaux de manière impeccable. Leur expertise en terminologie technique et en contenu spécifique à l\'industrie est remarquable.'
+    }
+  },
 };

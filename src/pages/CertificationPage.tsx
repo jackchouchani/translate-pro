@@ -6,28 +6,16 @@ import { useTranslation } from 'react-i18next';
 export const CertificationPage = () => {
   const { t } = useTranslation();
 
-  const steps = [
-    {
-      icon: FileCheck,
-      title: t('certification.steps.submission.title'),
-      description: t('certification.steps.submission.description')
-    },
-    {
-      icon: Shield,
-      title: t('certification.steps.translation.title'),
-      description: t('certification.steps.translation.description')
-    },
-    {
-      icon: Clock,
-      title: t('certification.steps.quality.title'),
-      description: t('certification.steps.quality.description')
-    },
-    {
-      icon: CheckCircle,
-      title: t('certification.steps.certification.title'),
-      description: t('certification.steps.certification.description')
-    }
-  ];
+  // Définir les étapes manuellement avec les icônes correspondantes
+  const stepIcons = {
+    submission: FileCheck,
+    translation: Shield,
+    quality: Clock,
+    certification: CheckCircle
+  };
+
+  // Créer un tableau des clés des étapes pour itérer dessus
+  const stepKeys = ['submission', 'translation', 'quality', 'certification'];
 
   return (
     <div className="pt-24 pb-16">
@@ -45,42 +33,54 @@ export const CertificationPage = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-lg shadow-md text-center"
-            >
-              <step.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
-            </motion.div>
-          ))}
+          {stepKeys.map((step, index) => {
+            const StepIcon = stepIcons[step as keyof typeof stepIcons];
+            return (
+              <motion.div
+                key={step}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-white p-6 rounded-lg shadow-md text-center"
+              >
+                <StepIcon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2">
+                  {t(`certification.steps.${step}.title`)}
+                </h3>
+                <p className="text-gray-600">
+                  {t(`certification.steps.${step}.description`)}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
 
         <div className="bg-blue-50 rounded-lg p-8">
           <h2 className="text-2xl font-bold mb-4">{t('certification.recognition.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-2">{t('certification.recognition.official.title')}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                {t('certification.recognition.official.title')}
+              </h3>
               <p className="text-gray-600 mb-4">
                 {t('certification.recognition.official.description')}
               </p>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
-                {t('certification.recognition.official.list', { returnObjects: true }).map((item: string, index: number) => (
+                {(t('certification.recognition.official.list', { returnObjects: true }) as string[]).map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
+
             <div>
-              <h3 className="text-xl font-semibold mb-2">{t('certification.recognition.quality.title')}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                {t('certification.recognition.quality.title')}
+              </h3>
               <p className="text-gray-600 mb-4">
                 {t('certification.recognition.quality.description')}
               </p>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
-                {t('certification.recognition.quality.list', { returnObjects: true }).map((item: string, index: number) => (
+                {(t('certification.recognition.quality.list', { returnObjects: true }) as string[]).map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>

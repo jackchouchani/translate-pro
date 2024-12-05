@@ -329,4 +329,47 @@ export const en = {
       submit: 'Request Quote',
     },
   },
+  testimonials: {
+    title: 'What Our Clients Say',
+    subtitle: 'Hear from organizations that trust our translation services',
+    roles: {
+      legal_director: 'Legal Director',
+      medical_officer: 'Chief Medical Officer',
+      tech_manager: 'Technical Documentation Manager'
+    },
+    content: {
+      sarah: 'TranslatePro has been instrumental in handling our international legal documentation...',
+      michael: 'The medical translations provided are consistently accurate and reliable...',
+      emma: 'Their technical translation team has exceptional knowledge...'
+    }
+  },
+  portfolio: {
+    title: 'Our Portfolio',
+    subtitle: 'Explore our diverse range of successful translation projects',
+    categories: {
+      all: 'All Projects',
+      legal: 'Legal',
+      medical: 'Medical',
+      technical: 'Technical',
+      business: 'Business'
+    },
+    items: {
+      legal1: {
+        title: 'International Contract Translation',
+        description: 'Complete translation of corporate merger documentation for a multinational company, including legal agreements and regulatory compliance documents.'
+      },
+      medical1: {
+        title: 'Medical Research Papers',
+        description: 'Translation of clinical trial documentation and research papers for a leading pharmaceutical company, ensuring precise medical terminology.'
+      },
+      technical1: {
+        title: 'Engineering Documentation',
+        description: 'Technical manual and specification translation for industrial equipment, including safety protocols and maintenance guides.'
+      },
+      business1: {
+        title: 'Corporate Communications',
+        description: 'Translation of annual reports, corporate presentations, and internal communications for a global business expansion project.'
+      }
+    }
+  },
 };

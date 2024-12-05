@@ -329,4 +329,51 @@ export const tr = {
       submit: 'Teklif İste',
     },
   },
+  portfolio: {
+    categories: {
+      all: 'Tüm Projeler',
+      legal: 'Hukuki',
+      medical: 'Tıbbi',
+      technical: 'Teknik',
+      business: 'İş'
+    },
+    clients: {
+      law_firm: 'Uluslararası Hukuk Firması',
+      health_org: 'Global Sağlık Organizasyonu',
+      engineering_corp: 'Mühendislik Çözümleri Şirketi',
+      multinational_corp: 'Çok Uluslu Şirket'
+    },
+    items: {
+      legal1: {
+        title: 'Uluslararası Sözleşme Çevirisi',
+        description: 'Çok uluslu bir şirket için şirket birleşme belgelerinin, yasal anlaşmaların ve düzenleyici uyum belgelerinin eksiksiz çevirisi.'
+      },
+      medical1: {
+        title: 'Tıbbi Araştırma Makaleleri',
+        description: 'Önde gelen bir ilaç şirketi için klinik deneme belgelerinin ve araştırma makalelerinin, hassas tıbbi terminoloji sağlanarak çevirisi.'
+      },
+      technical1: {
+        title: 'Mühendislik Dokümantasyonu',
+        description: 'Endüstriyel ekipman için teknik kılavuz ve şartname çevirisi, güvenlik protokolleri ve bakım kılavuzları dahil.'
+      },
+      business1: {
+        title: 'Kurumsal İletişim',
+        description: 'Global iş genişleme projesi için yıllık raporların, kurumsal sunumların ve iç iletişimlerin çevirisi.'
+      }
+    }
+  },
+  testimonials: {
+    title: 'Müşterilerimiz Ne Diyor',
+    subtitle: 'Çeviri hizmetlerimize güvenen kurumları dinleyin',
+    roles: {
+      legal_director: 'Hukuk Direktörü',
+      medical_officer: 'Baş Tıbbi Yetkili',
+      tech_manager: 'Teknik Dokümantasyon Müdürü'
+    },
+    content: {
+      sarah: 'TranslatePro, uluslararası yasal belgelerimizin yönetiminde çok önemli bir rol oynadı. Detaylara gösterdikleri dikkat ve hukuki uzmanlıkları olağanüstü. 5 yılı aşkın süredir onlarla çalışıyoruz ve hizmetleri sürekli olarak mükemmel oldu.',
+      michael: 'Sağlanan tıbbi çeviriler tutarlı bir şekilde doğru ve güvenilir. Sağlık dokümantasyonunun kritik doğasını anlıyorlar. Tıbbi çevirmen ekipleri, tüm klinik deneme belgelerimizde mükemmel doğruluğu sağlamamıza yardımcı oldu.',
+      emma: 'Teknik çeviri ekipleri olağanüstü bilgiye sahip. Belgelerimizi global pazarlara kusursuz bir şekilde ulaştırmamıza yardımcı oldular. Teknik terminoloji ve sektöre özgü içerik konusundaki uzmanlıkları dikkat çekici.'
+    }
+  }
 };

@@ -8,6 +8,7 @@ import { ServicesPage } from './pages/ServicesPage';
 import { CertificationPage } from './pages/CertificationPage';
 import { ContactPage } from './pages/ContactPage';
 import { QuotePage } from './pages/QuotePage';
+import { PortfolioPage } from './pages/PortfolioPage';
 import { LegalTranslationPage } from './pages/services/LegalTranslationPage';
 import { MedicalTranslationPage } from './pages/services/MedicalTranslationPage';
 import { TechnicalTranslationPage } from './pages/services/TechnicalTranslationPage';
@@ -31,6 +32,7 @@ function App() {
               <Route path="/certification" element={<CertificationPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/quote" element={<QuotePage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
             </Routes>
           </main>
           <Footer />
