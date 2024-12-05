@@ -377,5 +377,10 @@ export const tr = {
       michael: 'Sağlanan tıbbi çeviriler tutarlı bir şekilde doğru ve güvenilir. Sağlık dokümantasyonunun kritik doğasını anlıyorlar. Tıbbi çevirmen ekipleri, tüm klinik deneme belgelerimizde mükemmel doğruluğu sağlamamıza yardımcı oldu.',
       emma: 'Teknik çeviri ekipleri olağanüstü bilgiye sahip. Belgelerimizi global pazarlara kusursuz bir şekilde ulaştırmamıza yardımcı oldular. Teknik terminoloji ve sektöre özgü içerik konusundaki uzmanlıkları dikkat çekici.'
     }
-  }
+  },
+  languages: {
+    english: 'İngilizce',
+    turkish: 'Türkçe',
+    french: 'Fransızca'
+  },
 };

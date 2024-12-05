@@ -378,4 +378,9 @@ export const fr = {
       emma: 'Leur équipe de traduction technique possède des connaissances exceptionnelles. Ils nous ont aidés à diffuser notre documentation sur les marchés mondiaux de manière impeccable. Leur expertise en terminologie technique et en contenu spécifique à l\'industrie est remarquable.'
     }
   },
+  languages: {
+    english: 'Anglais',
+    turkish: 'Turc',
+    french: 'Français'
+  },
 };

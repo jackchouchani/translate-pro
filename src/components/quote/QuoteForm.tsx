@@ -42,7 +42,7 @@ export const QuoteForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     try {
       const response = await fetch("/", {
         method: "POST",
@@ -73,7 +73,7 @@ export const QuoteForm = () => {
   };
 
   return (
-    <form 
+    <form
       name="quote"
       method="POST"
       data-netlify="true"
@@ -148,9 +148,9 @@ export const QuoteForm = () => {
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="">{t('quote.form.selectLanguage')}</option>
-              <option value="en">English</option>
-              <option value="tr">Turkish</option>
-              <option value="fr">French</option>
+              <option value="en">{t('languages.english')}</option>
+              <option value="tr">{t('languages.turkish')}</option>
+              <option value="fr">{t('languages.french')}</option>
             </select>
           </div>
 
@@ -166,9 +166,9 @@ export const QuoteForm = () => {
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="">{t('quote.form.selectLanguage')}</option>
-              <option value="en">English</option>
-              <option value="tr">Turkish</option>
-              <option value="fr">French</option>
+              <option value="en">{t('languages.english')}</option>
+              <option value="tr">{t('languages.turkish')}</option>
+              <option value="fr">{t('languages.french')}</option>
             </select>
           </div>
         </div>

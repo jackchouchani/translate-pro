@@ -374,4 +374,9 @@ export const en = {
       }
     }
   },
+  languages: {
+    english: 'English',
+    turkish: 'Turkish',
+    french: 'French'
+  },
 };
