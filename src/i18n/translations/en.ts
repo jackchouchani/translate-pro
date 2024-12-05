@@ -327,6 +327,8 @@ export const en = {
       selectLanguage: 'Select Language',
       details: 'Project Details',
       submit: 'Request Quote',
+      successMessage: 'Your quote request has been successfully sent! We will get back to you shortly.',
+      errorMessage: 'An error occurred while sending your request. Please try again.',
     },
   },
   testimonials: {

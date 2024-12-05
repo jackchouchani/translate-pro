@@ -327,6 +327,8 @@ export const tr = {
       selectLanguage: 'Dil Seçin',
       details: 'Proje Detayları',
       submit: 'Teklif İste',
+      successMessage: 'Teklif talebiniz başarıyla gönderildi! En kısa sürede size geri dönüş yapacağız.',
+      errorMessage: 'Talebiniz gönderilirken bir hata oluştu. Lütfen tekrar deneyin.',
     },
   },
   portfolio: {

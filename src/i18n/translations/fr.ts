@@ -327,6 +327,8 @@ export const fr = {
       selectLanguage: 'Sélectionner une Langue',
       details: 'Détails du Projet',
       submit: 'Demander un Devis',
+      successMessage: 'Message envoyé avec succès !',
+      errorMessage: 'Une erreur est survenue. Veuillez réessayer.',
     },
   },
   portfolio: {
