@@ -9,10 +9,32 @@ export const en = {
   },
   hero: {
     title: 'Professional Certified Translation Services',
-    subtitle:
-      'Expert translation services for legal, medical, and technical documents. Certified accuracy with quick turnaround times.',
+    subtitle: 'Expert translation services for legal, medical, and technical documents. Certified accuracy with quick turnaround times.',
     getQuote: 'Get Free Quote',
     ourServices: 'Our Services',
+  },
+  about: {
+    title: 'About TranslatePro',
+    subtitle: 'With over 15 years of experience, we provide professional translation services that bridge language barriers and connect cultures.',
+    officeImage: 'Professional Translation Office',
+    features: {
+      certified: {
+        title: 'Certified Excellence',
+        description: 'Accredited by leading translation organizations with a proven track record in professional translation services.',
+      },
+      expert: {
+        title: 'Expert Team',
+        description: 'Our translators hold advanced degrees in their specialties and have extensive experience in their respective fields.',
+      },
+      global: {
+        title: 'Global Presence',
+        description: 'Serving clients worldwide with a network of professional translators covering over 50 languages.',
+      },
+      client: {
+        title: 'Client-Focused',
+        description: 'Dedicated to providing personalized service and maintaining long-term relationships with our clients.',
+      },
+    },
   },
   features: {
     certified: {
@@ -29,9 +51,14 @@ export const en = {
     },
   },
   services: {
+    mainPage: {
+      title: 'Our Services',
+      subtitle: 'Professional translation services tailored to your specific needs, delivered with precision and expertise.',
+    },
     legal: {
       title: 'Legal Translation',
       subtitle: 'Professional legal document translation services',
+      description: 'Certified legal translations with precision and confidentiality. From contracts to court documents, we ensure accuracy and legal compliance.',
       features: {
         certified: {
           title: 'Certified Translation',
@@ -61,35 +88,11 @@ export const en = {
           'Powers of Attorney',
         ],
       },
-      mainPage: {
-        title: 'Our Services',
-        subtitle:
-          'Professional translation services tailored to your specific needs, delivered with precision and expertise.',
-      },
-      legal: {
-        title: 'Legal Translation',
-        description:
-          'Certified translation of legal documents, contracts, and court papers with precision and confidentiality.',
-      },
-      medical: {
-        title: 'Medical Translation',
-        description:
-          'Accurate translation of medical records, research papers, and healthcare documentation.',
-      },
-      technical: {
-        title: 'Technical Translation',
-        description:
-          'Specialized translation of technical manuals, specifications, and engineering documents.',
-      },
-      business: {
-        title: 'Business Translation',
-        description:
-          'Professional translation of business documents, reports, and corporate communications.',
-      },
     },
     medical: {
       title: 'Medical Translation',
       subtitle: 'Specialized medical translation services',
+      description: 'Specialized medical translations by healthcare experts. Ensuring accurate translation of medical records, research papers, and clinical documentation.',
       features: {
         specialized: {
           title: 'Specialized Translation',
@@ -123,6 +126,7 @@ export const en = {
     technical: {
       title: 'Technical Translation',
       subtitle: 'Precise technical translation services',
+      description: 'Expert technical translations for manuals, specifications, and engineering documents with precise industry-specific terminology.',
       features: {
         expertise: {
           title: 'Technical Expertise',
@@ -156,6 +160,7 @@ export const en = {
     business: {
       title: 'Business Translation',
       subtitle: 'Professional business document translation services',
+      description: 'Professional business translations covering corporate documents, marketing materials, and financial reports with cultural adaptation.',
       features: {
         professional: {
           title: 'Professional Translation',
@@ -187,43 +192,9 @@ export const en = {
       },
     },
   },
-  quote: {
-    title: 'Get a Free Quote',
-    subtitle: 'Calculate the cost of your translation project instantly',
-    calculator: {
-      title: 'Price Calculator',
-      wordCount: 'Word Count',
-      documentType: 'Document Type',
-      types: {
-        general: 'General Document',
-        legal: 'Legal Document',
-        medical: 'Medical Document',
-        technical: 'Technical Document',
-      },
-      urgency: 'Delivery Time',
-      'urgency.normal': 'Standard (3-5 business days)',
-      'urgency.urgent': 'Urgent (1-2 business days)',
-      'urgency.express': 'Express (24 hours)',
-      estimatedPrice: 'Estimated Price',
-      disclaimer:
-        'This is an estimated price. Final price may vary based on document complexity.',
-    },
-    form: {
-      title: 'Request Detailed Quote',
-      name: 'Full Name',
-      email: 'Email Address',
-      phone: 'Phone Number',
-      sourceLanguage: 'Source Language',
-      targetLanguage: 'Target Language',
-      selectLanguage: 'Select Language',
-      details: 'Project Details',
-      submit: 'Request Quote',
-    },
-  },
   certification: {
     title: 'Certification Process',
-    subtitle:
-      'Our rigorous certification process ensures the highest quality and legal validity of your translated documents.',
+    subtitle: 'Our rigorous certification process ensures the highest quality and legal validity of your translated documents.',
     steps: {
       submission: {
         title: 'Document Submission',
@@ -246,8 +217,7 @@ export const en = {
       title: 'Our Certifications',
       official: {
         title: 'Official Recognition',
-        description:
-          'Our translations are officially recognized by government agencies, educational institutions, and businesses worldwide.',
+        description: 'Our translations are officially recognized by government agencies, educational institutions, and businesses worldwide.',
         list: [
           'Court-certified translations',
           'Notarized translations',
@@ -267,11 +237,9 @@ export const en = {
       },
     },
   },
-
   contact: {
     title: 'Contact Us',
-    subtitle:
-      'Get in touch with our team for professional translation services and expert language solutions.',
+    subtitle: 'Get in touch with our team for professional translation services and expert language solutions.',
     form: {
       title: 'Send us a Message',
       name: 'Full Name',
@@ -302,8 +270,7 @@ export const en = {
     },
     emergency: {
       title: 'Emergency Services',
-      description:
-        'Need urgent translation services? We offer 24/7 emergency translation support for time-sensitive documents.',
+      description: 'Need urgent translation services? We offer 24/7 emergency translation support for time-sensitive documents.',
       button: 'Contact Emergency Service',
     },
   },
@@ -330,32 +297,36 @@ export const en = {
     },
     copyright: 'All rights reserved.',
   },
-  about: {
-    title: 'About TranslatePro',
-    subtitle:
-      'With over 15 years of experience, we provide professional translation services that bridge language barriers and connect cultures.',
-    officeImage: 'Professional Translation Office',
-    features: {
-      certified: {
-        title: 'Certified Excellence',
-        description:
-          'Accredited by leading translation organizations with a proven track record in professional translation services.',
+  quote: {
+    title: 'Get a Free Quote',
+    subtitle: 'Calculate the cost of your translation project instantly',
+    calculator: {
+      title: 'Price Calculator',
+      wordCount: 'Word Count',
+      documentType: 'Document Type',
+      types: {
+        general: 'General Document',
+        legal: 'Legal Document',
+        medical: 'Medical Document',
+        technical: 'Technical Document',
       },
-      expert: {
-        title: 'Expert Team',
-        description:
-          'Our translators hold advanced degrees in their specialties and have extensive experience in their respective fields.',
-      },
-      global: {
-        title: 'Global Presence',
-        description:
-          'Serving clients worldwide with a network of professional translators covering over 50 languages.',
-      },
-      client: {
-        title: 'Client-Focused',
-        description:
-          'Dedicated to providing personalized service and maintaining long-term relationships with our clients.',
-      },
+      urgency: 'Delivery Time',
+      'urgency.normal': 'Standard (3-5 business days)',
+      'urgency.urgent': 'Urgent (1-2 business days)',
+      'urgency.express': 'Express (24 hours)',
+      estimatedPrice: 'Estimated Price',
+      disclaimer: 'This is an estimated price. Final price may vary based on document complexity.',
+    },
+    form: {
+      title: 'Request Detailed Quote',
+      name: 'Full Name',
+      email: 'Email Address',
+      phone: 'Phone Number',
+      sourceLanguage: 'Source Language',
+      targetLanguage: 'Target Language',
+      selectLanguage: 'Select Language',
+      details: 'Project Details',
+      submit: 'Request Quote',
     },
   },
 };
