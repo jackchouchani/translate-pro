@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, GraduationCap, Building, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import aboutImage from '../assets/images/about/about.jpg';
 
 export const AboutPage = () => {
   const { t } = useTranslation();
@@ -26,7 +27,7 @@ export const AboutPage = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80"
+              src={aboutImage}
               alt={t('about.officeImage')}
               className="rounded-lg shadow-lg"
             />

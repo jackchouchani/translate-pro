@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import heroImage from '../../assets/images/home/hero.jpg';
 
 export const HeroImage = () => {
   return (
@@ -10,7 +11,7 @@ export const HeroImage = () => {
       className="relative"
     >
       <img 
-        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
+        src={heroImage}
         alt="Professional Translator"
         className="rounded-lg shadow-xl"
       />
