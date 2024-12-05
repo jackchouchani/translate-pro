@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FileCheck, Shield, Clock, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
