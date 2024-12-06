@@ -340,9 +340,9 @@ export const en = {
       tech_manager: 'Technical Documentation Manager'
     },
     content: {
-      sarah: 'TranslatePro has been instrumental in handling our international legal documentation...',
-      michael: 'The medical translations provided are consistently accurate and reliable...',
-      emma: 'Their technical translation team has exceptional knowledge...'
+      sarah: 'TranslatePro has been instrumental in handling our international legal documentation. Their attention to detail and legal expertise is outstanding. We have been working with them for over 5 years and their service has been consistently excellent.',
+      michael: 'The medical translations provided are consistently accurate and reliable. They understand the critical nature of healthcare documentation. Their team of medical translators has helped us ensure perfect accuracy in all our clinical trials documentation.',
+      emma: 'Their technical translation team has exceptional knowledge. They have helped us deliver our documentation to global markets flawlessly. Their expertise in technical terminology and industry-specific content is remarkable.'
     }
   },
   portfolio: {
