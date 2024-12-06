@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ScrollToTop } from './components/common/ScrollToTop';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { Hero } from './components/home/Hero';
@@ -18,6 +19,7 @@ function App() {
   return (
     <Suspense fallback={<div className="h-screen w-screen flex items-center justify-center">Loading...</div>}>
       <Router>
+      <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
